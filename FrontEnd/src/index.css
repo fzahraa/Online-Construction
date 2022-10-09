@@ -1,0 +1,255 @@
+:root {
+  --clr-black: #1d2226;
+  --clr-blue-1: #8c9efc;
+  --clr-blue-2: #424d83;
+  --clr-white-1: #ffffff;
+  --clr-white-2: #c0c1cc;
+  --clr-white-2: rgba(110, 106, 106, 0.85);
+  --clr-white-3: #dedef5;
+}
+
+@font-face {
+  font-family: Font;
+  src: url(./utils/arabicfont.ttf);
+}
+
+/*
+==============================
+Global Styles
+==============================
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+title {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+body {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+select {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+option {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+button {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-weight: 400;
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+small {
+  font-family: Font;
+  letter-spacing: 0.5px;
+}
+
+.bg {
+  background-color: #f7f8ff;
+}
+
+input[type='file'] {
+  color: transparent;
+}
+
+.section__title {
+  max-width: 80rem;
+  margin: auto;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--clr-black);
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .section__title {
+    font-size: 3rem;
+  }
+}
+
+.section__blue {
+  padding: 5rem 4rem;
+  background-color: #f7f8ff;
+}
+
+.section__white {
+  padding: 5rem 4rem;
+  background-color: white;
+
+}
+
+
+
+/*
+==============================
+Button Styles
+==============================
+*/
+.btn-small:link,
+.btn-small:visited {
+  display: inline-block;
+  color: var(--clr-blue-2);
+  background-color: white;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.7rem 4.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 850px) {
+
+  .btn-small:link,
+  .btn-small:visited {
+    font-size: 1.6rem;
+    padding: 0.9rem 3rem;
+  }
+}
+
+.blue-btn {
+  display: inline-block;
+  margin: auto;
+  padding: 1rem 4rem;
+  color: white;
+  font-size: 2.3rem;
+  background-color: var(--clr-blue-2);
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .blue-btn {
+    font-size: 2rem;
+  }
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  font-weight: 500;
+}
+
+.section-100vh {
+  position: relative;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.section-50vh-1200w {
+  position: relative;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-50vh-1200w {
+    min-height: 50vh;
+  }
+}
+
+/*
+==============================
+Navigation Styles
+==============================
+*/
+.nav__parent {
+  background-color: #424d83;
+}
+
+
+.nav__container {
+  max-width: 119rem;
+  margin: auto;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  height: 70px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar__logo {
+    height: 60px;
+    width: 130px;
+    ;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .btn-nav {
+    align-self: flex-end;
+  }
+}
+
+/* Temporary Disable Button. */
+.disableButtonColor {
+  background-color: #6c6d79;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
